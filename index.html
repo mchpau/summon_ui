@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- HTML for Template Summon UI -->
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' data: gap: https://ssl.gstatic.com * 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: raw.githubusercontent.com; connect-src 'self' raw.githubusercontent.com">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+        <link rel="shortcut icon" type="image/x-icon" href="img/blees.ico" />
+
+        <title>WeatherBeacons</title>
+    </head>
+    <body id="main_view" data-role="main" class="frame" style="text-align:center; color:#888">
+
+        <div data-role="header" data-theme="b">
+                <text align=center style="font-size: 200%; font-weight:100;">
+                    <span style="color:#0099FF">W</span>
+                    <span style="color:#0099CC">E</span>
+                    <span style="color:#009999">A</span>
+                    <span style="color:#009966">B</span>
+                    <span style="color:#009933">A</span>
+                </text>
+        </div>
+
+        <table border="0" align=center style="width:96% !important; padding:10px; margin:5px 5px 0 5px; background:#eee; font-weight:100" id="template">
+            <tr>
+                <td colspan=5 style="text-align:left; padding-bottom:10px">
+                    <h1 style="font-size: 90%; display: inline;" class="devtitle">DeviceId</h1>
+                    <span class="data_update">Waiting for data...</span>
+                </td>
+            </tr>
+            <tr>
+                <td align=left class="charImgCell"><img class="charImg" src="img/temp.png" alt="temp_img" name="tempimg"/></td>
+                <td align=left class="charImgCell"><img class="charImg" src="img/humidity.png" alt="humidity_img" name="humimg"/></td>
+            </tr>
+            <tr>
+                <td align=center class="charValueCell tempVal">0</td>
+                <td align=center class="charValueCell humVal">0</td>
+            </tr>
+        </table>
+
+       <div data-display="overlay" data-swipe-close="true" data-dismissible="false" data-position="right" data-role="panel" id="logPanel">
+            <h2>Log</h2>
+            <p id="console" ></p>
+       </div>
+
+        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
